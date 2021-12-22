@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="greetings">Hello from XML</string>
+    <string name="button">Update the TextView</string>
+    <string name="hint">A name</string>
+    <string name="cancel">Cancel</string>
+    <string name="ok">OK</string>
+</resources>
