@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:layout_margin="50dp">
+
+    <TextView
+        android:id="@+id/guessMessage"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/try_to_guess_100"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/guessInput"
+        android:layout_marginTop="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/input_text"
+        android:inputType="numberPassword"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"/>
+
+    <Button
+        android:id="@+id/guessButton"
+        android:onClick="OnClick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_name"
+        android:layout_below="@+id/guessInput"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"/>
+
+    <Button
+        android:id="@+id/exit"
+        android:onClick="Exit_Click"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/guessButton"
+        android:layout_centerHorizontal="true"
+        android:text="@string/exit"
+        android:layout_marginTop="40dp"/>
+
+    <Button
+        android:id="@+id/lvlHard"
+        android:layout_toRightOf="@+id/guessButton"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="15dp"
+        android:layout_below="@+id/guessInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lvlHrd"
+        android:onClick="LvlHrd_Click"/>
+
+    <Button
+        android:id="@+id/lvlEasy"
+        android:layout_toLeftOf="@+id/guessButton"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="15dp"
+        android:text="@string/lvlEasy"
+        android:onClick="LvlEasy_Click"
+        android:layout_below="@+id/guessInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>
