@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">EyE</string>
+    <string name="tv">Till the End</string>
+    <string name="timer">00</string>
+    <string name="info">Exercise: </string>
+    <string name="feed">To start exercising click the button below - "Start"</string>
+    <string name="btnSt">Start</string>
+</resources>
